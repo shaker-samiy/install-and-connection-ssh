@@ -1,0 +1,32 @@
+--------------------- install ssh in linux ------------------------
+#lastupdate:19_Nov_2024
+
+[shaker sami] [shaker.samiy@gmail.com] [+201068448613 - +201117518670]
+
+#--------------- installing ssh -------------
+>sudo dnf install openssh-clients openssh-server
+
+#--------------- starting ssh -------------
+>sudo systemctl start sshd
+
+
+#--------------- enabling ssh after loading -------------
+
+>systemctl enable sshd
+
+#--------------- check the satus of ssh -------------
+
+>systemctl status sshd
+
+#--------------- check the version of ssh -------------
+
+>ssh -v  # v capital letter
+
+#--------------- connect to ssh -------------
+
+> ssh {{ password }}@{{ host_ip_address }} : [port]
+
+
+#-------------------- installing remmina -------------
+#---remmina allows connection via ( RDP - VNC- SSH )---
+>sudo dnf install remmina
